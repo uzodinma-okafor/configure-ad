@@ -49,8 +49,12 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <br /><hr>
 <p>
+  
+  <img src="https://i.imgur.com/wIKFQ4K.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/wIKFQ4K.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <h2>Part 2: Ensure Connectivity between the client and Domain Controller</h2>
 5.	Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+ 
 6.	Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
 7.	Check back at Client-1 to see the ping succeed
 
