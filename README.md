@@ -3,12 +3,14 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+Hello again! This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines (VM).<br />
 
 
-<h2>Video Demonstration</h2>
+<h2>What is Active Directory?</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+Active Directory (AD) is a Microsoft directory service that runs on a Windows Server and allows administrators to manage resources, assign permissions, change account passwords, and control access to network resources within an organization. There is an on-premises software version of AD that's usually installed into computers. There is also a cloud based version of AD found on Microsoft Azure.
+
+The purpose of this project is to set up and configure an on-premises Active Directory within Azure VMs.
 
 <h2>Environments and Technologies Used</h2>
 
