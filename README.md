@@ -51,11 +51,22 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <p>
   
   <img src="https://i.imgur.com/wIKFQ4K.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-   <img src="https://i.imgur.com/wIKFQ4K.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+  </p>
+<p>
 <h2>Part 2: Ensure Connectivity between the client and Domain Controller</h2>
-5.	Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
- 
+- Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with "ping -t <ip address>"
+  
+  - The outcome we should see is a perpetual ping. However, the request times out instead as seen in pic above. Let's fix that error.
+</p>
+<br /><hr>
+<p>
+   <img src="https://i.imgur.com/HO5a6A9.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+  </p>
+  <p>
 6.	Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+  
+  - Open "Windows Defender Firewall with Advanced Security" >> In left side window pane, click "Inbound Rules"
+  - Expand the program window and sort Inbound Rules by "ICMPv4" Protocol >> select and right click the 2 Inbound rules starting with "Core Networking Diagnostics - ICMP Echo Request..." (where one has a "Private" profile and the other a "Domain" profile as seen in pic above) and select "Enable Rule" for both rules
 7.	Check back at Client-1 to see the ping succeed
 
 Install Active Directory
