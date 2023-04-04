@@ -60,16 +60,19 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <br /><hr>
 <p>
-   <img src="https://i.imgur.com/HO5a6A9.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/HO5a6A9.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/qWY1TqJ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
   </p>
   <p>
-6.	Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+-	Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
   
   - Open "Windows Defender Firewall with Advanced Security" >> In left side window pane, click "Inbound Rules"
-  - Expand the program window and sort Inbound Rules by "ICMPv4" Protocol >> select and right click the 2 Inbound rules starting with "Core Networking Diagnostics - ICMP Echo Request..." (where one has a "Private" profile and the other a "Domain" profile as seen in pic above) and select "Enable Rule" for both rules
-7.	Check back at Client-1 to see the ping succeed
-
-Install Active Directory
+  - Expand the program window and sort Inbound Rules by "ICMPv4" Protocol >> select and right click the 2 Inbound rules starting with "Core Networking Diagnostics - ICMP Echo Request..." (where one has a "Private" profile and the other a "Domain" profile as seen in left pic above) and select "Enable Rule" for both rules
+-	Check back at Client-1 to see the ping succeed. It should ping as seen in right pic above.
+</p>
+<br /><hr>
+<p></p>
+<p>
+<h2>Part 3: Install Active Directory & Admin Creation</h2>
 8.	Login to DC-1 and install Active Directory Domain Services
 9.	Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 10.	Restart and then log back into DC-1 as user: mydomain.com\labuser
