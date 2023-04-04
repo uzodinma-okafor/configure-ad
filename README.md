@@ -32,15 +32,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
+  <h2>Part 1: Setup Resources in Azure</h2>
 <img src="https://i.imgur.com/L3byC8z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/sLEEO5q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Setup Resources in Azure
-1.	Create the Domain Controller VM (Windows Server 2022) named “DC-1”
-a.	Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
-2.	Set Domain Controller’s NIC Private IP address to be static. DC-1 > Networking > NIC > IP Configurations
-3.	Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
-4.	Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
+
+- Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+  
+- Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
+-	Set Domain Controller’s NIC Private IP address to be static. DC-1 > Networking > NIC > IP Configurations
+-	Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created for DC-1.
+-	Ensure that both VMs are in the same Vnet (you can check the topology with the Network Watcher). Take a quick look below at a visual presentation of what we're doing:
+  <img src="https://i.imgur.com/L3byC8z.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Ensure Connectivity between the client and Domain Controller
 5.	Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
