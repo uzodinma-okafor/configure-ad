@@ -54,7 +54,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   </p>
 <p>
 <h2>Part 2: Ensure Connectivity between the client and Domain Controller</h2>
-- Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with "ping -t <ip address>"
+- Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with "ping -t (ip address)"
   
   - The outcome we should see is a perpetual ping. However, the request times out instead as seen in pic above. Let's fix that error.
 </p>
