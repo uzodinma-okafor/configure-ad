@@ -70,20 +70,18 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 -	Check back at Client-1 to see the ping succeed. It should ping as seen in right pic above.
 </p>
 <br /><hr>
-<p></p>
+<p><img src="https://i.imgur.com/Hyhz52R.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/hVrvKjW.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/qWY1TqJ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
 <h2>Part 3: Install Active Directory & Admin Creation</h2>
-8.	Login to DC-1 and install Active Directory Domain Services
-9.	Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
-10.	Restart and then log back into DC-1 as user: mydomain.com\labuser
+- Step 4. Set Up Active Directory
 
-Create an Admin and Normal User Account in AD
-11.	In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-12.	Create a new OU named “_ADMINS”
-13.	Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
-14.	Add jane_admin to the “Domain Admins” Security Group
-15.	Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
-16.	User jane_admin as your admin account from now on
+  - Click "notification" to Select: "Promote this server to a Domain Controller"
+  - Select: "Add a new forest" (mydomain.com or your choice)
+  - Choose a Password and make note of this
+  - Complete Installation ("Next"; "Next"; "Next"; "Next" and "Install")
+  - Allow the server to close, which will disconnect the Remote Desktop.
+  - Restart and then log back into DC-1 as user: mydomain.com\labuser
+
 
 
 Join Client-1 to your domain (mydomain.com)
