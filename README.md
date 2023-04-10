@@ -161,7 +161,9 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <br /><hr>
 
-<p></p>
+<p>
+<img src="https://i.imgur.com/1UPzkSS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OXlitbp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OXlitbp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
 <p>
 - Fixing Common Account & Password Issues
 
