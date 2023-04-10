@@ -162,16 +162,23 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <br /><hr>
 
 <p></p>
-<p></p>
+<p>
+- Fixing Common Password Issues
+
+- Log into DC-1 >> In ADUC, Navigate to: _EMPLOYEES >> Choose Name of employee whose account you want to adjust and Right Click to find properties
+  - Select Account tab 
+- Unlock Account when user is locked out
+  - Check box to Unlock Account
+- Reset Passwords
+  - Right Click Name of Account you want to adjust
+  - Scroll down the Drop Down Menu to "Reset Password"
+</p>
 <br /><hr>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Thats is it ! In the next tutorial, we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<br /><hr>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
