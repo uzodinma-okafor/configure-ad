@@ -70,7 +70,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 -	Check back at Client-1 to see the ping succeed. It should ping as seen in right pic above.
 </p>
 <br /><hr>
-<p><img src="https://i.imgur.com/Hyhz52R.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/hVrvKjW.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/MJoDKvk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/MJoDKvk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p><img src="https://i.imgur.com/Hyhz52R.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/hVrvKjW.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/MJoDKvk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OG3pK2e.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
 <h2>Part 3: Install Active Directory & Admin Creation</h2>
 - Step 4. Set Up Active Directory
