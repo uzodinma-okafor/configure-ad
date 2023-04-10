@@ -151,20 +151,18 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <br />
 <hr>
-<p></p>
-<p></p>
+<p> <img src="https://i.imgur.com/jubCZnM.png" height="80%" width="80%" alt="Create Random Users"/><img src="https://i.imgur.com/TgNAQAU.png" height="80%" width="80%" alt="Create Random Users"/></p>
+<p>
+- Test by choosing random name and accounts
+
+- Choose a random name, take note of account info
+- Sign out of Client-1
+- Log into Client-1 again, using new account name to test access
+</p>
 <br /><hr>
 
-
-Create a bunch of additional users and attempt to log into client-1 with one of the users
-27.	Login to DC-1 as jane_admin
-28.	Open PowerShell_ise as an administrator
-29.	Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-30.	Run the script and observe the accounts being created
-31.	When finished, open ADUC and observe the accounts in the appropriate OU
-32.	attempt to log into Client-1 with one of the accounts (take note of the password in the script)
-
-</p>
+<p></p>
+<p></p>
 <br /><hr>
 
 <p>
