@@ -110,15 +110,12 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   
   <img src="https://i.imgur.com/7RcFReS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
-Step 7. Join Client-1 to your domain (mydomain.com)
+- Join Client-1 to your domain (mydomain.com)
 
-From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-In Azure, Locate DC's Private IP address in the VM DC's Overview
-Open the VM Client-1
-Select "Networking"
-Select the "Network Interface" link
-Select "DNS Servers" in the Left Column
-Choose "Custom" DNS Servers
+- From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+- In Azure, Locate DC's Private IP address in the VM DC's Overview
+- Open the VM Client-1 >> Select "Networking" >> Select the "Network Interface" link
+- Select "DNS Servers" in the Left Column >> Choose "Custom" DNS Servers
 Enter the DC's Private IP address as the DNS Server
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
