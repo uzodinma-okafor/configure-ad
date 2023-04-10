@@ -73,7 +73,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <p><img src="https://i.imgur.com/Hyhz52R.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/hVrvKjW.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/MJoDKvk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OG3pK2e.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
 <h2>Part 3: Install Active Directory & Admin Creation</h2>
-- Step 4. Set Up Active Directory
+- Configure Active Directory
 
   - Click "notification" to Select: "Promote this server to a Domain Controller"
   - Select: "Add a new forest" (mydomain.com or your choice)
@@ -81,7 +81,18 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Complete Installation ("Next"; "Next"; "Next"; "Next" and "Install")
   - Allow the server to close, which will disconnect the Remote Desktop.
   - Restart and then log back into DC-1 as user: mydomain.com\labuser
+</p>
+<br /><hr>
+<p><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/tSdRX9c.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p>
+- Step 5. Create Admin and Normal User Accounts in AD
 
+  - Navigate to Active Directory Users and Computers (ADUC)
+  - Create and take note of names and passwords:
+    - an Organizational Unit (OU) called “_EMPLOYEES”
+    - a new OU named “_ADMINS”
+    - a new employee named “Jane Doe” with the username of “jane_admin” (For practice purposes, select "Password never expires")
+</p>
 
 
 Join Client-1 to your domain (mydomain.com)
