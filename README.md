@@ -162,30 +162,25 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <br /><hr>
 
 <p>
-<img src="https://i.imgur.com/1UPzkSS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OXlitbp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OXlitbp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1UPzkSS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OXlitbp.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/Mb2HwGb.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 - Fixing Common Account & Password Issues
 
 - Log into DC-1 >> In ADUC, Navigate to: _EMPLOYEES >> Choose Name of employee whose account you want to adjust and Right Click to find properties
   - Select Account tab 
-- Unlock Account when user is locked out
+- Unlock Account when user is locked out (see 1st 2 pics above)
   - Check box to Unlock Account
-- Reset Passwords
+- Reset Passwords (see last 2 pics in black margin above)
   - Right Click Name of Account you want to adjust
   - Scroll down the Drop Down Menu to "Reset Password"
+  - Make new password to share with the employee/user
+  - Can also have the employee/user change that password at his or her next login
+  - Can also have the employee/user's account unlocked 
 </p>
 <br /><hr>
 
 <p>
-Thats is it ! In the next tutorial, we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
+Thats is it ! In the [next tutorial](), we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
 </p>
 <br /><hr>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
