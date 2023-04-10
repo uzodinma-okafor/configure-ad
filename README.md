@@ -128,37 +128,33 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <br /><hr>
 <p><img src="https://i.imgur.com/wAFGLkS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/Q0hvZnn.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/H697YyZ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
-Step 8. Setup Remote Desktop for non-administrative users on Client-1
+- Configure Remote Desktop for non-administrative users on Client-1
 
 - Log into Client-1 as mydomain.com\jane_admin (top pic)
 - Open system properties (2nd pic, 1) >> (2) Click “Remote Desktop” >> (3) Click "Select users that can remotely access this PC" >> (4) Click "Add" >> (see 3rd pic) Allow “domain users” access to remote desktop 
-- Now, you can log into Client-1 as a normal, non-administrative user (Another way is to do this with Group Policy, which allows you to change many systems at once)
+- Now, you can log into Client-1 as a normal, non-administrative user (The normal way to do this is with Group Policy because it allows you to change many systems at once)
 </p>
 <br /><hr>
 <p>
-<img src="https://i.imgur.com/O29Taca.png" height="80%" width="80%" alt="Create Random Users"/>
+<img src="https://i.imgur.com/AGiAIb8.png" height="80%" width="80%" alt="Create Random Users"/>
+  <img src="https://i.imgur.com/BIqLVDs.png" height="80%" width="80%" alt="Create Random Users"/>
 </p>
 <p>
-Step 9. Create random additional users
+- Create a bunch of random additional users and try attempting to log into client-1 with one of the users
 
 - Within DC-1 Remote Desktop 
 - Open PowerShell ISE by right clicking to "Run as Administrator" 
 - Open new file
 - Paste the contents of [this script file](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it (randomly creating new users with "Password1" as their passwords for testing purposes)
-- Open Active Directory and _EMPLOYEES to see the list of random users being added 
+- Open Active Directory and check the "_EMPLOYEES" OU to see the list of random users being added 
 
 </p>
 <br />
 <hr>
+<p></p>
+<p></p>
+<br /><hr>
 
-
-
-Setup Remote Desktop for non-administrative users on Client-1
-22.	Log into Client-1 as mydomain.com\jane_admin and open system properties
-23.	Click “Remote Desktop”
-24.	Allow “domain users” access to remote desktop
-25.	You can now log into Client-1 as a normal, non-administrative user now
-26.	Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 27.	Login to DC-1 as jane_admin
