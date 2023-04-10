@@ -123,11 +123,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 - Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
   - Log into Client-1 (Remote Desktop) as original local admin (labuser)
   - (Bottom pic) Right Click Start menu >> Select "System" >> (1) Select "Rename this PC (advanced)" >> (2) Select "Change" >> (3) In "Domain" box type:din-okafor.com >> (4) Select "OK" >> (5) In Computer Name/Domain Changes box: -"din-okafor.com\jane_admin" and password >> (6) Select "OK" and restart when prompted
-  
-  
-Login to the Domain Controller (Remote Desktop)
-Navigate to Active Directory Users and Computers (ADUC)
-Verify Client-1 shows up inside “Computers” container on the root of the domain
+- Login to the Domain Controller via Remote Desktop >> Navigate to Active Directory Users and Computers (ADUC) >> Verify Client-1 shows up inside “Computers” container on the root of the domain
 
 Join Client-1 to your domain (mydomain.com)
 17.	From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
