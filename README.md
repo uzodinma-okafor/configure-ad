@@ -83,18 +83,19 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <br /><hr>
-<p><img src="https://i.imgur.com/kVVwcTQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OriaoYz.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p><img src="https://i.imgur.com/kVVwcTQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OriaoYz.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
-- Step 5. Create Admin and Normal User Accounts in AD
+- Create Admin and Normal User Accounts in AD
 
   - Navigate to Active Directory Users and Computers (ADUC)
   - Create and take note of names and passwords:
-    - an Organizational Unit (OU) called “_EMPLOYEES”
-    - a new OU named “_ADMINS”
-    - a new employee named “Jane Doe” with the username of “jane_admin” (For practice purposes, select "Password never expires")
+    - an Organizational Unit (OU) called “_EMPLOYEES” (as in left pic above)
+    - a new OU named “_ADMINS”(as in left pic)
+    - a new employee named “Jane Doe” with the username of “jane_admin” (For practice purposes, select "Password never expires") (as in 3 pics in right pic above)
 </p>
-
-
+<br /><hr>
+<p></p>
+<p>
 Join Client-1 to your domain (mydomain.com)
 17.	From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 18.	From the Azure Portal, restart Client-1
