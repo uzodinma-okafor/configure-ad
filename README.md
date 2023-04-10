@@ -181,6 +181,6 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <br /><hr>
 
 <p>
-Thats is it ! In the  (https://github.com/uzodinma-okafor/azure-network-protocols), we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
+Thats is it ! In the <a href="https://github.com/uzodinma-okafor/azure-network-protocols">next tutorial</a>, we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
 </p>
 <br /><hr>
