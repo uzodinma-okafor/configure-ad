@@ -108,25 +108,23 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <p>
   <h2>Part 4: Create X-Amount of Client Users using PowerShell Script</h2>
   
-  <img src="https://i.imgur.com/7RcFReS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+  <img src="https://i.imgur.com/1Z00GXq.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/PN4Prgi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+  </p>
 <p>
 - Join Client-1 to your domain (din-okafor.com)
 
-- From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+- (top 2 pics in black) From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 - In Azure, Locate DC's Private IP address in the VM DC's Overview
 - Open the VM Client-1 >> Select "Networking" >> Select the "Network Interface" link
 - Select "DNS Servers" in the Left Column >> Choose "Custom" DNS Servers & enter the DC's Private IP address as the DNS Server
 - From the Azure Portal, restart Client-1
-Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-Log into Client-1 (Remote Desktop) as original local admin (labuser)
-Right Click Start menu
-Select "System"
-Select "Rename this PC (advanced)"
-Select "Change"
-In "Domain" box type:din-okafor.com
-Select "OK"
-In Computer Name/Domain Changes box: -"din-okafor.com\jane_admin" and password
-Select "OK" and restart when prompted
+
+- Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+  - Log into Client-1 (Remote Desktop) as original local admin (labuser)
+  - (Bottom pic) Right Click Start menu >> Select "System" >> (1) Select "Rename this PC (advanced)" >> (2) Select "Change" >> (3) In "Domain" box type:din-okafor.com >> (4) Select "OK" >> (5) In Computer Name/Domain Changes box: -"din-okafor.com\jane_admin" and password >> (6) Select "OK" and restart when prompted
+  
+  
 Login to the Domain Controller (Remote Desktop)
 Navigate to Active Directory Users and Computers (ADUC)
 Verify Client-1 shows up inside “Computers” container on the root of the domain
