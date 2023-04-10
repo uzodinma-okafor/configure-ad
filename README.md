@@ -39,11 +39,11 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <p>
 
-- Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+- Create the Domain Controller virtual machine (VM) with operating system, Windows Server 2022, and  name it “DC-1”.
   
 - Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
 -	Set Domain Controller’s NIC Private IP address to be static. DC-1 > Networking > NIC > IP Configurations
--	Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created for DC-1.
+-	Create the Client VM with Windows 10 operating system and name it “Client-1”. Use the same Resource Group and Vnet that was created for DC-1.
 -	Ensure that both VMs are in the same Vnet (you can check the topology with the Network Watcher). Take a quick look below at a visual presentation of what we're doing:
   <img src="https://i.imgur.com/gBEzWB4.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
@@ -76,11 +76,11 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 - Configure Active Directory
 
   - Click "notification" to Select: "Promote this server to a Domain Controller"
-  - Select: "Add a new forest" (mydomain.com or your choice)
+  - Select: "Add a new forest" (din-okafor.com or your choice)
   - Choose a Password and make note of this
   - Complete Installation ("Next"; "Next"; "Next"; "Next" and "Install")
   - Allow the server to close, which will disconnect the Remote Desktop.
-  - Restart and then log back into DC-1 as user: mydomain.com\labuser
+  - Restart and then log back into DC-1 as user: din-okafor.com\labuserdin  (NOTE: "labuserdin" is just the username of the original user for both VMs when they were created in this tutorial's example; feel free to use another username for your VMs if you prefer)
 </p>
 <br /><hr>
 <p><img src="https://i.imgur.com/kVVwcTQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/OriaoYz.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
