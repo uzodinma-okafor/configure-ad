@@ -83,7 +83,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <br /><hr>
-<p><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/tSdRX9c.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p><img src="https://i.imgur.com/kVVwcTQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/tSdRX9c.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/En41Toj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
 - Step 5. Create Admin and Normal User Accounts in AD
 
