@@ -181,6 +181,6 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 <br /><hr>
 
 <p>
-Thats is it ! In the [this script file](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) (https://github.com/uzodinma-okafor/azure-network-protocols), we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
+Thats is it ! In the  (https://github.com/uzodinma-okafor/azure-network-protocols), we will go over various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
 </p>
 <br /><hr>
