@@ -124,13 +124,33 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Log into Client-1 (Remote Desktop) as original local admin (labuser)
   - (Bottom pic) Right Click Start menu >> Select "System" >> (1) Select "Rename this PC (advanced)" >> (2) Select "Change" >> (3) In "Domain" box type:din-okafor.com >> (4) Select "OK" >> (5) In Computer Name/Domain Changes box: -"din-okafor.com\jane_admin" and password >> (6) Select "OK" and restart when prompted
 - Login to the Domain Controller via Remote Desktop >> Navigate to Active Directory Users and Computers (ADUC) >> Verify Client-1 shows up inside “Computers” container on the root of the domain
+</p>
+<br /><hr>
+<p><img src="https://i.imgur.com/wAFGLkS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/Q0hvZnn.png" height="50%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/H697YyZ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p>
+Step 8. Setup Remote Desktop for non-administrative users on Client-1
 
-Join Client-1 to your domain (mydomain.com)
-17.	From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-18.	From the Azure Portal, restart Client-1
-19.	Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-20.	Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
-21.	Create a new OU named “_CLIENTS” and drag Client-1 into there
+- Log into Client-1 as mydomain.com\jane_admin (top pic)
+- Open system properties (2nd pic, 1) >> (2) Click “Remote Desktop” >> (3) Click "Select users that can remotely access this PC" >> (4) Click "Add" >> (see 3rd pic) Allow “domain users” access to remote desktop 
+- Now, you can log into Client-1 as a normal, non-administrative user (Another way is to do this with Group Policy, which allows you to change many systems at once)
+</p>
+<br /><hr>
+<p>
+<img src="https://i.imgur.com/O29Taca.png" height="80%" width="80%" alt="Create Random Users"/>
+</p>
+<p>
+Step 9. Create random additional users
+
+- Within DC-1 Remote Desktop 
+- Open PowerShell ISE by right clicking to "Run as Administrator" 
+- Open new file
+- Paste the contents of [this script file](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it (randomly creating new users with "Password1" as their passwords for testing purposes)
+- Open Active Directory and _EMPLOYEES to see the list of random users being added 
+
+</p>
+<br />
+<hr>
+
 
 
 Setup Remote Desktop for non-administrative users on Client-1
