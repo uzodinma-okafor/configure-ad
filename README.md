@@ -94,8 +94,19 @@ The purpose of this project is to set up and configure an on-premises Active Dir
     - a new employee named “Jane Doe” with the username of “jane_admin” (For practice purposes, select "Password never expires") (as in 3 pics in right pic above)
 </p>
 <br /><hr>
-<p></p>
+<p><img src="https://i.imgur.com/76EagQ9.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
 <p>
+- Add jane_admin to the “Domain Admins” Security Group
+
+  - Select the _ADMIN Jane Doe and right click to Select Properties
+  - Select "Member Of"
+  - Add Domain Users: "Domain"
+  - Select "Check Names" to open name options
+  - Select "Domain Admins"
+  - Complete by Selecting "Ok"; "Ok"; "Apply"; "Ok"
+  - Log out and close the Remote Desktop connection to DC-1
+  - Log back in as mydomain\jane_admin
+
 Join Client-1 to your domain (mydomain.com)
 17.	From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 18.	From the Azure Portal, restart Client-1
