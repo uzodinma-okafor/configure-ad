@@ -105,8 +105,35 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Log back in as mydomain\jane_admin
 </p>
 <br /><hr>
-<p></p>
 <p>
+  <h2>Part 4: Create X-Amount of Client Users using PowerShell Script</h2>
+  
+  <img src="https://i.imgur.com/7RcFReS.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></p>
+<p>
+Step 7. Join Client-1 to your domain (mydomain.com)
+
+From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+In Azure, Locate DC's Private IP address in the VM DC's Overview
+Open the VM Client-1
+Select "Networking"
+Select the "Network Interface" link
+Select "DNS Servers" in the Left Column
+Choose "Custom" DNS Servers
+Enter the DC's Private IP address as the DNS Server
+From the Azure Portal, restart Client-1
+Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+Log into Client-1 (Remote Desktop) as original local admin (labuser)
+Right Click Start menu
+Select "System"
+Select "Rename this PC (advanced)"
+Select "Change"
+In "Domain" box type: mydomain.com
+Select "OK"
+In Computer Name/Domain Changes box: -"mydomain.com\jane_admin" and password
+Select "OK" and restart when prompted
+Login to the Domain Controller (Remote Desktop)
+Navigate to Active Directory Users and Computers (ADUC)
+Verify Client-1 shows up inside “Computers” container on the root of the domain
 
 Join Client-1 to your domain (mydomain.com)
 17.	From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
