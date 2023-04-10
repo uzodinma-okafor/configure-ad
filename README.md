@@ -151,7 +151,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 </p>
 <br />
 <hr>
-<p> <img src="https://i.imgur.com/jubCZnM.png" height="80%" width="80%" alt="Create Random Users"/><img src="https://i.imgur.com/TgNAQAU.png" height="80%" width="80%" alt="Create Random Users"/></p>
+<p> <img src="https://i.imgur.com/jubCZnM.png" height="80%" width="80%" alt="Create Random Users"/><img src="https://i.imgur.com/TgNAQAU.png" height="80%" width="80%" alt="Create Random Users"/><img src="https://i.imgur.com/oziMID3.png" height="80%" width="80%" alt="Create Random Users"/></p>
 <p>
 - Test by choosing random name and accounts
 
@@ -163,7 +163,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
 
 <p></p>
 <p>
-- Fixing Common Password Issues
+- Fixing Common Account & Password Issues
 
 - Log into DC-1 >> In ADUC, Navigate to: _EMPLOYEES >> Choose Name of employee whose account you want to adjust and Right Click to find properties
   - Select Account tab 
