@@ -102,7 +102,7 @@ The purpose of this project is to set up and configure an on-premises Active Dir
   - Add Domain Users: "Domain" >> Select "Check Names" to open name options
   - Select "Domain Admins" >> Complete by Selecting "Ok"; "Ok"; "Apply"; "Ok" (Refer to pics above for reference)
   - Log out and close the Remote Desktop connection to DC-1
-  - Log back in as mydomain\jane_admin
+  - Log back in as din-okafor.com\jane_admin
 </p>
 <br /><hr>
 <p>
