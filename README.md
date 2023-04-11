@@ -10,7 +10,7 @@ Hello again! This tutorial outlines the implementation of on-premises Active Dir
 
 Active Directory (AD) is a Microsoft directory service that runs on a Windows Server and allows administrators to manage resources, assign permissions, change account passwords, and control access to network resources within an organization. There is an on-premises software version of AD that's usually installed into computers. There is also a cloud based version of AD found on Microsoft Azure.
 
-The purpose of this project is to set up and configure an on-premises Active Directory within Azure VMs.
+The purpose of this project is to set up, configure, and deploy an on-premises version of Active Directory within Azure VMs.
 
 <h2>Environments and Technologies Used</h2>
 
